@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>time</title>
+</head>
+
+<body>
+    <p class="timer-label">現在時刻</p>
+    <p class="timer" id="realtime"></p>
+    <br>
+    <div class="iframe-container">
+        <iframe class="iframe" id="iframe"
+            src="https://miyakou.bus-navigation.jp/wgsys/wgs/bus.htm?tabName=searchTab&from=%E7%A0%82%E6%8A%BC%E7%94%BA&fromType=1&to=%E5%85%AB%E6%9C%A8%E5%B1%B1%E5%8B%95%E7%89%A9%E5%85%AC%E5%9C%92%E9%A7%85&toType=1&locale=ja&bsid=1&mapFlag=false&existYn=N">
+        </iframe>
+        <iframe class="iframe" id="iframe"
+            src="https://miyakou.bus-navigation.jp/wgsys/wgs/search.htm?tabName=mapTab&selectedLandmarkCatCd=&from=%E7%A0%82%E6%8A%BC%E7%94%BA&fromType=1&to=%E5%85%AB%E6%9C%A8%E5%B1%B1%E5%8B%95%E7%89%A9%E5%85%AC%E5%9C%92%E9%A7%85&toType=1&locale=ja&sortBy=3&mapFlag=true&existYn=N&nextDiagramFlag=0">
+        </iframe>
+    </div>
+</body>
+<script src=" script.js">
+</script>
+
+</html>
