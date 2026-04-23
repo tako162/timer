@@ -11,9 +11,10 @@ body {
 }
 
 .timer {
+    font-family:courier;
     margin: 0;
     color: #fff;
-    font-size: 1000%;
+    font-size: 80vw;
     text-align: center;
 }
 
