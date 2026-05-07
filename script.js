@@ -14,7 +14,7 @@ function showClock() {
     let msg = nowHour + ":" + nowMin + ":" + nowSec;
     document.getElementById("realtime").innerHTML = msg;
 }
-setInterval('showClock()', 1000);
+setInterval('showClock()', 500);
 function reloadIframe() {
     let iframes = document.getElementsByClassName('iframe');
     for (let i = 0; i < iframes.length; i++) {
