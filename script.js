@@ -14,8 +14,10 @@ function showClock() {
     let msg = nowHour + ":" + nowMin + ":" + nowSec;
     document.getElementById("realtime").innerHTML = msg;
     if (nowHour >= 7 && nowMin >= 46) {
-        document.getElementById("timer-label").classList.add("glad");
+        document.getElementById("timer-label").classList.add("glad-label");
         document.getElementById("timer-label").textContent = "◤◢◤遅刻確定◢◤◢";
+        document.getElementById("timer").classList.add("glad-label");
+
     }
 }
 setInterval('showClock()', 1);
