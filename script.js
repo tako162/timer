@@ -12,12 +12,12 @@ function showClock() {
     let nowMin = twoDigit(nowTime.getMinutes());
     let nowSec = twoDigit(nowTime.getSeconds());
     let msg = nowHour + ":" + nowMin + ":" + nowSec;
+    const current = nowTime.getHours() * 60 + nowTime.getMinutes();
     document.getElementById("realtime").innerHTML = msg;
-    if (nowHour >= 7 && nowMin >= 46) {
+    if (current >= 7 * 60 + 46) {
         document.getElementById("timer-label").classList.add("glad-label");
         document.getElementById("timer-label").textContent = "◤◢◤遅刻確定◢◤◢";
-        document.getElementById("timer").classList.add("glad-label");
-
+        document.getElementById("realtime").classList.add("glad-timer");
     }
 }
 setInterval('showClock()', 1);
