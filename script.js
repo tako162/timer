@@ -20,7 +20,7 @@ function showClock() {
         document.getElementById("realtime").classList.add("glad-timer");
     }
 }
-setInterval('showClock()', 1);
+setInterval('showClock()', 500);
 function reloadIframe() {
     let iframes = document.getElementsByClassName('iframe');
     for (let i = 0; i < iframes.length; i++) {
