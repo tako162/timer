@@ -11,7 +11,8 @@ body {
 }
 
 .timer {
-    font-family: courier;
+    /* font-family: courier; */
+    font-family: serif;
     margin: 0;
     color: #fff;
     font-size: 20vw;
@@ -29,7 +30,6 @@ iframe {
 }
 
 .glad-label {
-    font-family: serif;
     font-weight: bold;
     font-size: 9vw;
     background: linear-gradient(90deg, #FF0000, #FFFF00, #FF00FF);
@@ -41,7 +41,6 @@ iframe {
 }
 
 .glad-timer {
-    font-family: serif;
     font-weight: bold;
     background: linear-gradient(90deg, #FF0000, #FFFF00, #FF00FF);
     background-size: 200% 100%;
