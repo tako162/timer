@@ -30,7 +30,7 @@ iframe {
 
 .glad-label {
     font-size: 9vw;
-    background: linear-gradient(90deg, #FF0000, #FFFF00, #FF00FF);
+    background: linear-gradient(90deg, #FF0000, #FFFF00, #FF00FF, #FF0000);
     background-size: 200% 100%;
     animation: gradientAnimation 1s linear infinite;
     -webkit-background-clip: text;
@@ -39,7 +39,7 @@ iframe {
 }
 
 .glad-timer {
-    background: linear-gradient(90deg, #FF0000, #FFFF00, #FF00FF);
+    background: linear-gradient(90deg, #FF0000, #FFFF00, #FF00FF, #FF0000);
     background-size: 200% 100%;
     animation: gradientAnimation 1s linear infinite;
     -webkit-background-clip: text;
