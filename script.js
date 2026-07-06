@@ -13,8 +13,12 @@ function showClock() {
     let nowSec = twoDigit(nowTime.getSeconds());
     let msg = nowHour + ":" + nowMin + ":" + nowSec;
     document.getElementById("realtime").innerHTML = msg;
+    if (nowHour == 7 && nowMin > 46) {
+        document.getElementById("timer-label").classList.add("glad");
+        document.getElementById("timer-label").textContent = "遅刻確定";
+    }
 }
-setInterval('showClock()', 500);
+setInterval('showClock()', 1);
 function reloadIframe() {
     let iframes = document.getElementsByClassName('iframe');
     for (let i = 0; i < iframes.length; i++) {

@@ -11,7 +11,7 @@ body {
 }
 
 .timer {
-    font-family:courier;
+    font-family: courier;
     margin: 0;
     color: #fff;
     font-size: 20vw;
@@ -26,4 +26,24 @@ iframe {
     margin: 0;
     width: 50%;
     height: 525px;
+}
+
+.glad {
+    font-family: sans-serif;
+    background: linear-gradient(90deg, #FF0000, #FFFF00, #FF00FF);
+    background-size: 200% 100%;
+    animation: gradientAnimation 1s linear infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
 }
