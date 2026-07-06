@@ -29,7 +29,7 @@ iframe {
 }
 
 .glad {
-    font-family: sans-serif;
+    font-family: serif;
     background: linear-gradient(90deg, #FF0000, #FFFF00, #FF00FF);
     background-size: 200% 100%;
     animation: gradientAnimation 1s linear infinite;
